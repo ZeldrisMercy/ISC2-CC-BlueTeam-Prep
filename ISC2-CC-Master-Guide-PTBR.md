@@ -1,10 +1,12 @@
 # 🛡️ (ISC)² Certified in Cybersecurity (CC) - Blue Team Master Guide [PT-BR]
 
-Bem-vindo ao Guia Definitivo de Preparação para a certificação (ISC)² CC. Este repositório foi arquitetado para operações de **Blue Team** e Defesa Cibernética, dissecando os fundamentos desde a governança de risco até a arquitetura de redes.
+Bem-vindo ao **Guia Definitivo de Preparação para a certificação (ISC)² CC**.
+
+Este repositório foi arquitetado para operações de **Blue Team** e **Defesa Cibernética**, dissecando os fundamentos desde governança de risco até arquitetura de redes.
 
 ---
 
-## 🧠 Mapa Mental Central: A Base da Segurança
+# 🧠 Mapa Mental Central: A Base da Segurança
 
 ```mermaid
 mindmap
@@ -32,11 +34,11 @@ mindmap
 
 ---
 
-# 🏛️ DOMÍNIO 1: Princípios de Segurança e Governança
+# 🏛️ DOMÍNIO 1 — Princípios de Segurança e Governança
 
 ## Governança e Ética
 
-A (ISC)² exige um entendimento rigoroso sobre deveres e ética profissional.
+A (ISC)² exige entendimento rigoroso de responsabilidade e ética profissional.
 
 | Conceito | Definição Prática no SOC | Exemplo |
 |---|---|---|
@@ -70,8 +72,6 @@ graph TD
 
 ## 📊 Matemática do Risco (Risk Quantification)
 
-Na gestão de risco em segurança da informação, utilizamos cálculos quantitativos para estimar o impacto financeiro de incidentes de segurança.
-
 ### 🧮 Fórmula Principal
 
 ```
@@ -82,22 +82,22 @@ ALE = SLE × ARO
 
 | Sigla | Nome | Significado |
 |------|------|-------------|
-| **EF** | Exposure Factor | Percentual de perda quando o incidente ocorre |
-| **SLE** | Single Loss Expectancy | Prejuízo causado por um único incidente |
-| **ARO** | Annual Rate of Occurrence | Frequência anual do incidente |
-| **ALE** | Annual Loss Expectancy | Perda financeira anual esperada |
+| EF | Exposure Factor | Percentual de perda quando o incidente ocorre |
+| SLE | Single Loss Expectancy | Prejuízo de um incidente |
+| ARO | Annual Rate of Occurrence | Frequência anual |
+| ALE | Annual Loss Expectancy | Perda anual esperada |
 
 ---
 
-### 🔢 Etapas do Cálculo
+### 🔢 Etapas do cálculo
 
-#### 1️⃣ Calcular o SLE
+#### 1️⃣ Calcular SLE
 
 ```
 SLE = Asset Value × EF
 ```
 
-#### 2️⃣ Calcular o ALE
+#### 2️⃣ Calcular ALE
 
 ```
 ALE = SLE × ARO
@@ -105,49 +105,31 @@ ALE = SLE × ARO
 
 ---
 
-### 💻 Exemplo Prático
+### 💻 Exemplo
 
 | Parâmetro | Valor |
 |----------|------|
 | Asset Value | $100.000 |
 | Exposure Factor | 25% |
-| ARO | 2 vezes por ano |
+| ARO | 2 |
 
-#### Passo 1 — Calcular o SLE
-
-```
-SLE = 100.000 × 0.25
-SLE = 25.000
-```
-
-#### Passo 2 — Calcular o ALE
+#### Cálculo
 
 ```
-ALE = 25.000 × 2
-ALE = 50.000
+SLE = 100000 × 0.25
+SLE = 25000
 ```
+
+```
+ALE = 25000 × 2
+ALE = 50000
+```
+
+📉 **Resultado:** perda anual estimada de **$50.000**.
 
 ---
 
-### 📉 Resultado
-
-> A organização pode perder **$50.000 por ano** devido a esse risco.
-
----
-
-### 🛡️ Uso no Mundo Real
-
-Se uma solução custa **$20.000** e elimina esse risco:
-
-```
-Custo da solução < ALE
-```
-
-Logo, o investimento **é justificável financeiramente**.
-
----
-
-# 🚨 DOMÍNIO 2: Continuidade e Resposta a Incidentes
+# 🚨 DOMÍNIO 2 — Continuidade e Resposta a Incidentes
 
 ## Fluxo Organizacional
 
@@ -165,29 +147,29 @@ Logo, o investimento **é justificável financeiramente**.
 timeline
     title Incidente Crítico
     Queda do Sistema : Ponto Zero
-    RPO (Recovery Point Objective): Máxima perda aceitável de dados
-    RTO (Recovery Time Objective): Tempo para restaurar sistemas
-    MTD (Maximum Tolerable Downtime): Limite máximo tolerável
+    RPO : Máxima perda aceitável de dados
+    RTO : Tempo para restaurar sistemas
+    MTD : Tempo máximo tolerável
 ```
 
 ---
 
-## 🚨 Fases de Resposta a Incidentes (NIST)
+## Fases de Resposta a Incidentes (NIST)
 
 | Fase | Descrição |
 |-----|-----------|
-| **1. Preparação** | Criação de políticas, playbooks e ferramentas |
-| **2. Detecção e Análise** | Identificação do incidente |
-| **3. Contenção** | Isolar o sistema afetado |
-| **4. Erradicação** | Remover malware e vulnerabilidades |
-| **5. Recuperação** | Restaurar sistemas |
-| **6. Lições Aprendidas** | Melhorar processos |
+| Preparação | Políticas, playbooks, ferramentas |
+| Detecção | Identificação do incidente |
+| Contenção | Isolar sistema afetado |
+| Erradicação | Remover malware |
+| Recuperação | Restaurar sistemas |
+| Lições Aprendidas | Melhorar processos |
 
-⚠ **Regra de ouro:** Contenção é a ação mais urgente.
+⚠ **Regra de ouro:** contenção imediata.
 
 ---
 
-# 🔑 DOMÍNIO 3: Controle de Acessos
+# 🔑 DOMÍNIO 3 — Controle de Acessos
 
 ## Gestão de Privilégios
 
@@ -198,7 +180,9 @@ timeline
 
 Mitigação:
 
-✔ auditorias de acesso
+```
+Auditorias de acesso
+```
 
 ---
 
@@ -232,24 +216,24 @@ graph LR
 
 ---
 
-## 🔐 Modelos de Controle de Acesso
+## Modelos de Controle de Acesso
 
 | Modelo | Descrição |
 |------|-----------|
-| **DAC** | Dono do recurso define permissões |
-| **MAC** | Sistema baseado em rótulos de segurança |
-| **RBAC** | Baseado em cargos |
-| **RuBAC** | Baseado em regras globais |
+| DAC | Dono define permissões |
+| MAC | Baseado em rótulos |
+| RBAC | Baseado em cargos |
+| RuBAC | Baseado em regras |
 
 ---
 
-# 🌐 DOMÍNIO 4: Segurança de Redes
+# 🌐 DOMÍNIO 4 — Segurança de Redes
 
 ## Modelos de Cloud
 
 | Modelo | Provedor | Cliente |
 |---|---|---|
-| IaaS | Infraestrutura | SO e Apps |
+| IaaS | Infraestrutura | SO + Apps |
 | PaaS | Infra + SO | Código |
 | SaaS | Tudo | Uso |
 
@@ -257,8 +241,10 @@ graph LR
 
 ## WAF vs IPS
 
-IPS → Camadas 3 e 4  
+```
+IPS → Camadas 3 e 4
 WAF → Camada 7
+```
 
 Protege contra:
 
@@ -271,15 +257,19 @@ Protege contra:
 
 ### VLAN Hopping
 
-Mitigação:
+Mitigação
 
-- desativar DTP
+```
+Desativar DTP
+```
 
 ### Split Tunneling
 
 Cria ponte entre:
 
-internet local + rede corporativa
+```
+Internet local + rede corporativa
+```
 
 ✔ Melhor prática: **Full Tunneling**
 
@@ -289,19 +279,19 @@ internet local + rede corporativa
 
 | Porta | Protocolo | Uso |
 |---|---|---|
-| 21 | FTP |
-| 22 | SSH |
-| 23 | Telnet |
-| 25 | SMTP |
-| 53 | DNS |
-| 80 | HTTP |
-| 443 | HTTPS |
-| 1433 | SQL Server |
-| 3389 | RDP |
+| 21 | FTP | Transferência |
+| 22 | SSH | Acesso remoto |
+| 23 | Telnet | Obsoleto |
+| 25 | SMTP | Email |
+| 53 | DNS | Resolução |
+| 80 | HTTP | Web |
+| 443 | HTTPS | Web segura |
+| 1433 | SQL Server | Banco |
+| 3389 | RDP | Windows remoto |
 
 ---
 
-# ⚙️ DOMÍNIO 5: Operações de Segurança
+# ⚙️ DOMÍNIO 5 — Operações de Segurança
 
 ## Criptografia
 
@@ -322,46 +312,54 @@ graph TD
 
 ---
 
-## 💡 Dica de Prova
-
-Dispositivos **IoT → ECC**
+## 💡 Dica de prova
 
 ```
-ECC (Elliptic Curve Cryptography)
+Dispositivos IoT → ECC
 ```
 
-Chaves menores → mesmo nível de segurança → menos processamento.
+ECC usa **chaves menores com mesma segurança**, ideal para dispositivos com pouca capacidade.
 
 ---
 
-## ⚙️ Baseline vs Hardening
+## Baseline vs Hardening
 
 | Conceito | Definição |
 |--------|-----------|
-| **Baseline** | Padrão documentado |
-| **Hardening** | Aplicação de configurações seguras |
+| Baseline | Configuração padrão documentada |
+| Hardening | Aplicar configurações seguras |
 
 ### Exemplos
 
 ```
-- Fechar portas
-- Remover serviços
-- Atualizar patches
+Fechar portas
+Remover serviços
+Atualizar patches
 ```
 
 ---
 
-## 🗑️ Destruição de Dados
+## Destruição de Dados
 
 | Método | Descrição |
 |------|-----------|
-| Clearing | Sobrescrever dados |
+| Clearing | Sobrescrever |
 | Purging | Limpeza profunda |
 | Degaussing | Campo magnético |
 | Physical Destruction | Destruição física |
 
-🔥 **Padrão ouro:** `Physical Destruction`
+🔥 **Padrão ouro**
+
+```
+Physical Destruction
+```
 
 ---
 
-**Ícaro de Souza Mariano - ZeldrisMercy**
+## 👨‍💻 Autor
+
+**Ícaro de Souza Mariano - ZeldrisMercy**  
+Threat Detection • SIEM • Blue Team • Incident Response
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Icaro%20de%20Souza%20Mariano-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/icaro-s-m/)
+---
