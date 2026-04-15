@@ -23,10 +23,12 @@ Sinceramente, não achei um simulador de questões na internet que fosse melhor 
 Basta copiar o conteúdo de um dos arquivos `.md` acima, colar no Gemini e aplicar o seguinte prompt:
 
 > **Prompt para Simulados:**
-> *"Atue como um examinador sênior da certificação (ISC)² CC. Baseado estritamente no texto que colei abaixo, gere um simulado com 5 questões de múltipla escolha (A, B, C, D) no estilo, pegadinhas e dificuldade do exame oficial. Não me dê as respostas imediatamente. Faça uma pergunta por vez. Aguarde minha resposta, diga se eu acertei ou errei, forneça uma explicação detalhada focada na mentalidade de defesa (Blue Team) e só então faça a próxima pergunta."*
+> *"Generate an interactive multiple-choice quiz based strictly on the text provided below. Create exactly [INSERIR NÚMERO, ex: 15] questions at the difficulty level of the official (ISC)² Certified in Cybersecurity (CC) exam. Focus heavily on scenario-based application and Blue Team/defensive perspectives. Ensure the detailed rationale for each answer is included in the interactive feedback. Here is the text: [COLE O TEXTO DO DOMÍNIO]"*
 
 ## 🃏 Flashcards: Active Recall
-Para memorizar conceitos rápidos, como portas, protocolos, camadas OSI e as fases da *Cyber Kill Chain*, você pode gerar cartas de memorização instantâneas. Após colar o material no Gemini, use este prompt:
+
+> **Para memorizar conceitos rápidos, como portas, protocolos, camadas OSI e as fases da *Cyber Kill Chain*, você pode gerar cartas de memorização instantâneas. Após colar o material no Gemini, use este prompt:**
+> *"Generate an interactive flashcard set based strictly on the text provided below. Focus ONLY on high-yield exam concepts: port numbers, protocols, frameworks (like NIST/MITRE), and critical access control definitions for the (ISC)² CC exam. Make them concise and optimized for rapid active recall. Here is the text: [COLE O TEXTO]."*
 
 > **Prompt para Flashcards:**
 > *"Com base no texto técnico que forneci, crie 15 flashcards no formato 'Frente: [Conceito/Termo] | Verso: [Definição concisa e direta]'. O formato deve ser em texto limpo, ideal para eu copiar e colar diretamente no Anki ou Quizlet."*
